@@ -15,6 +15,7 @@ return h.make_builtin({
         command = "tidy-imports",
         args = {
             "-n", -- do not reformat imports
+            "--no-remove-unused", -- do not remove unused imports
         },
         to_stdin = true,
     },
